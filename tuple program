@@ -1,0 +1,45 @@
+
+"""
+# Taking input from user
+numbers = tuple(map(int, input("Enter integers separated by space: ").split()))
+
+# a) Print total number of items
+print("Total number of items:", len(numbers))
+
+# b) Print the last item
+print("Last item:", numbers[-1])
+
+# c) Print elements in reverse order
+print("Elements in reverse order:", numbers[::-1])
+
+# d) Check if 5 and 0 exist in tuple
+print("Is 5 present?", 5 in numbers)
+print("Is 0 present?", 0 in numbers)
+
+# e) Remove first and last items and print remaining
+if len(numbers) > 2:
+    print("After removing first and last items:", numbers[1:-1])
+else:
+    print("Not enough elements to remove first and last items.")
+"""
+# Lab Assignment - 2
+
+# Taking prices input from user
+prices = tuple(map(float, input("Enter prices separated by space: ").split()))
+
+# a) Print total number of items sold
+print("Total number of items sold:", len(prices))
+
+# b) Print price of cheapest item
+print("Cheapest item price:", min(prices))
+
+# c) Print price of costliest item
+print("Costliest item price:", max(prices))
+
+# d) Print price list in ascending order
+print("Prices in ascending order:", tuple(sorted(prices)))
+
+# e) Print number of costliest items sold
+costliest = max(prices)
+print("Number of costliest items sold:", prices.count(costliest))
+"""
