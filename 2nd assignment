@@ -1,0 +1,24 @@
+# Vendor Details
+name = input("Enter Vendor Name: ")
+year = input("Enter Year of Association: ")
+contact = input("Enter Contact Number: ")
+email = input("Enter Email ID: ")
+
+# Monthly Purchases
+total = 0
+print("\nEnter monthly purchase amount:")
+
+for i in range(1, 13):
+    amount = float(input(f"Month {i}: Rs. "))
+    total += amount
+
+# Annual Report
+average = total / 12
+
+print("\n----- Annual Purchase Report -----")
+print("Vendor Name:", name)
+print("Year of Association:", year)
+print("Contact Number:", contact)
+print("Email ID:", email)
+print("Total Annual Purchase: Rs.", total)
+print("Average Monthly Purchase: Rs.", average)
