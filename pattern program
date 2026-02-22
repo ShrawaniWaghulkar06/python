@@ -1,0 +1,113 @@
+"""
+# Task 1: triangle pattern
+#a
+rows = 5
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
+#b
+rows = 5
+for i in range(1, rows + 1):
+    print(str(i) * i)
+#c
+rows = 5
+for i in range(1, rows + 1):
+    for j in range(i, 0, -1):
+        print(j, end="")
+    print()
+#d
+rows = 5
+for i in range(1, rows + 1):
+    for j in range(i):
+        print(j % 2, end=" ")
+    print()
+#e
+rows = 4
+num = 2
+for i in range(1, rows + 1):
+    for j in range(i):
+        print(num, end=" ")
+        num += 2
+    print()
+#f
+rows = 5
+for i in range(1, rows + 1):
+    print("* " * i)
+"""
+"""
+# Task 2: pattern 
+#a
+rows = 5
+for i in range(1, rows + 1):
+    for j in range(65, 65 + i):
+        print(chr(j), end="")
+    print()
+#b
+rows = 5
+for i in range(1, rows + 1):
+    for j in range(i):
+        if j % 2 == 0:
+            print("*", end=" ")
+        else:
+            print("#", end=" ")
+    print()
+#c
+word = "python"
+for i in range(1, len(word) + 1):
+    print(word[:i])
+#d
+word = "python"
+for i, ch in enumerate(word, start=1):
+    print(ch * i)
+"""
+"""
+# Task 3: Print sequence 1...n without spaces
+def task3(n: int):
+    for i in range(1, n+1):
+        print(i, end="")
+task3(3)
+"""
+"""
+# Task 4: Simple star pattern
+def task4():
+    for i in range(1, 6):
+        print("*" * i)
+task4()
+"""
+"""
+# Task 5: Reverse star pattern
+def task5():
+    for i in range(5, 0, -1):
+        print("*" * i)
+task5()
+"""
+"""
+# Task 6: Diamond star pattern
+rows=5
+for i in range(1, rows + 1):
+    print("* " * i)
+for i in range(rows - 1, 0, -1):
+    print("* " * i)
+"""
+"""
+# Task 7: Prime Number Finder
+while True:
+    start = int(input("Enter start: "))
+    end = int(input("Enter end: "))
+    if start <= end:
+        break
+    print("Start must be <= end, try again.")
+print("Prime numbers:")
+for num in range(start, end + 1):
+    if num > 1:
+        for i in range(2, num):
+            if num % i == 0:
+                break
+        else:
+            print(num)
+"""
+import numpy as np
+
+a = np.array([1, 2, 3])
+print(a)
