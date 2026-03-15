@@ -1,0 +1,16 @@
+V = float(input("Enter Voltage (V): "))
+R = float(input("Enter Resistance (R): "))
+I = V / R
+print("Current (I) =", I, "A")
+
+# Modified
+V = float(input("Enter Voltage (V): "))
+R = float(input("Enter Resistance (R): "))
+I = V / R
+print("Current (I) =", I, "A")
+if I<0.5:
+    print("Low current")
+if I>0.5 and I<2:
+    print("Normal current")
+if I>2:
+    print("High current")
